@@ -1,0 +1,12 @@
+{
+  "name": "ollama_intro",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "ollama": "^0.5.18"
+  }
+}
