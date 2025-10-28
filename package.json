@@ -1,14 +1,30 @@
 {
+<<<<<<< HEAD
   "name": "Scrim-s06c53f",
   "description": "https://scrimba.com/the-ai-engineer-path-c02v/~07uj",
   "scripts": {
     "start": "node index.js",
+=======
+  "name": "Scrim-s05mq7n",
+  "description": "https://scrimba.com/the-ai-engineer-path-c02v/~01p",
+  "scripts": {
+    "start": "vite",
+>>>>>>> local-backup
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "express": "^5.1.0",
     "vite": "latest"
   }
 }
+=======
+    "@supabase/supabase-js": "2.38.0",
+    "openai": "4.12.1",
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
+>>>>>>> local-backup

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import express from "express";
 import ollama from "ollama";
 
@@ -25,3 +26,24 @@ app.get("/", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+=======
+import { openai, supabase } from './config.js';
+import podcasts from './content.js';
+
+async function main(input) {
+  await Promise.all(
+    input.map( async (textChunk) => {
+        const embeddingResponse = await openai.embeddings.create({
+            model: "text-embedding-ada-002",
+            input: textChunk
+        });
+        const data = { 
+          content: textChunk, 
+          embedding: embeddingResponse.data[0].embedding 
+        }
+        console.log(data);  
+    })    
+  );
+  console.log('Embedding complete!');
+}
+>>>>>>> local-backup
