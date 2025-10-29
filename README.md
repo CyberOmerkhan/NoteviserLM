@@ -8,7 +8,7 @@ NotevisorLM maps your notes, tracks what’s fading, and crowns the next thing t
 - Predicts which ideas you’re likely to forget
 - Surfaces timely refreshers, quizzes, and summaries
 - Tags, clusters, and retrieves related notes
-- Plays nicely with existing note apps and formats
+- Plays nicely with existing note apps and formats!
 
 👑 **Why it matters**
 Too many notes turn into a quiet mausoleum. NotevisorLM revives the right ideas at the right moment so knowledge compounds.
