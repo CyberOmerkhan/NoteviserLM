@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### 👑 NotevisorLM
 
 **The LLM that remembers what you don’t.**  
