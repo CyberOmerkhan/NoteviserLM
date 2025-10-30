@@ -15,7 +15,7 @@ async function main(input) {
     })
   );
   
-  // Insert content and embedding into Supabase
+  
   await supabase.from('documents').insert(data); 
   console.log('Embedding and storing complete!');
 }
