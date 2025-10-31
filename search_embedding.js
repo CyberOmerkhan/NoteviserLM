@@ -3,6 +3,8 @@ import podcasts from './content.js';
 
 const query = "Jammin' in the Big Easy";
 
+main(query);
+
 async function main(input) {
     // create an embedding representing the input text
 
