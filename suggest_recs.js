@@ -44,6 +44,7 @@ async function getChatCompletion(text, query){
     const response = await openai.chat.completions.create({
         model: 'gpt-4',
         messages: messages,
+        frequency_penalty: 0.5,
     });
     console.log(response.choices[0].message.content);
 }
