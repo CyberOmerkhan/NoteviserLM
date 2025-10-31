@@ -1,7 +1,7 @@
 import { openai, supabase } from './config.js';
 import podcasts from './content.js';
 
-const query = "Jammin' in the Big Easy";
+const query = "something about time";
 
 main(query);
 
