@@ -8,6 +8,7 @@ main(query);
 async function main(input) {
   const embedding = await createEmbedding(input);
   const match = await findNearestMatch(embedding);
+  
   console.log(match);
 }
 
@@ -28,4 +29,21 @@ async function findNearestMatch(embedding) {
     match_count: 1
   });
   return data[0].content;
+}
+
+
+const messages = [
+    {"role": "system", "content": 'You are an enthusiastic podcast expert who loves recommending podcasts to people. You will be given two pieces of information - some context about podcasts episodes and a question. Your main job is to formulate a short answer to the question using the provided context. If you are unsure and cannot find the answer in the context, say, "Sorry, I dont know the answer." Please do not make up the answer.'},
+]
+
+async function getChatCompletion(text, query){
+    chatMessages.push({
+        role: "user", 
+        content: `Content: ${text} Question: ${query}`,
+    });
+    const response = await openai.chat.completions.create({
+        model: 'gpt-4',
+        messages: messages,
+    });
+    console.log(response.choices[0].message.content);
 }
