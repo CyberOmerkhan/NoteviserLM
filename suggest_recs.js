@@ -8,8 +8,7 @@ main(query);
 async function main(input) {
   const embedding = await createEmbedding(input);
   const match = await findNearestMatch(embedding);
-  
-  console.log(match);
+  await getChatCompletion(match, input);
 }
 
 // Create an embedding vector representing the input text
