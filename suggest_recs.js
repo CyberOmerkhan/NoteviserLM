@@ -1,7 +1,7 @@
 import { openai, supabase } from './config.js';
 
 // User query about podcasts
-const query = "Something peaceful and relaxing";
+const query = "Something motivating";
 main(query);
 
 // Bring all function calls together
