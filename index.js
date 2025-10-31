@@ -1,6 +1,7 @@
 import { openai, supabase } from './config.js';
 import podcasts from './content.js';
 
+
 async function main(input) {
   const data = await Promise.all(
     input.map( async (textChunk) => {
@@ -15,7 +16,7 @@ async function main(input) {
     })
   );
   
-  
+
   await supabase.from('documents').insert(data); 
   console.log('Embedding and storing complete!');
 }
