@@ -7,7 +7,7 @@ async function main(input) {
     input.map( async (textChunk) => {
         const embeddingResponse = await openai.embeddings.create({
             model: "text-embedding-ada-002",
-            input: textChunk
+            input: textChunk,
         });
         return { 
           content: textChunk, 
