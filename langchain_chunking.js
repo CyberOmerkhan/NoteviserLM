@@ -11,7 +11,6 @@ async function splitDocument(){
     });
 
     const texts = await textSplitter.createDocuments([text]);
-
     console.log(texts.length);
 }
 
