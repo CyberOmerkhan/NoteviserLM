@@ -1,7 +1,6 @@
 import { openai, supabase } from './config.js';
 import podcasts from './content.js';
 
-
 async function main(input) {
   const data = await Promise.all(
     input.map( async (textChunk) => {
